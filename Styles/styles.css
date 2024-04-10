@@ -1,0 +1,281 @@
+/* Codigo para la barra de navegación y logo (Pagina Index) */
+@import url('https://fonts.googleapis.com/css2?family=Agbalumo&family=Signika+Negative&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Agbalumo", sans-serif;
+}
+/* Barra de navegación */
+header{
+    background-color: orange;
+    height: 80px;
+    font-size: 22px;
+    padding: 20px;
+}
+
+.logo{
+    float: left;
+    color: #fff;
+}
+
+.logo span{
+    color: #333;
+    font-weight: bold;
+}
+
+.barra{
+    float: right;
+}
+
+.barra ul li{
+    list-style: none;
+    display: inline-block;
+}
+
+.barra a{
+    text-decoration: none;
+    color: #fff;
+}
+
+.barra a:hover{
+    color: #333;
+}
+
+/* Imagen de fondo */
+main{
+    height: calc(100vh - 80px);
+    width: 100%;
+    background-color: #333;
+    background-image: url(../Images/pizza-4952508_1920.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+/* Botón "Mas Info" */
+.call{
+    color: #fff;
+    width: 60%;
+    border: 5px solid orange;
+    float: left;
+    margin: 30px;
+    padding: 20px;
+    background-color: rgba(0, 0, 0, 0.7);
+}
+
+h1{
+    color: #fff;
+    margin-bottom: 20px;
+}
+
+.call p{
+    margin-bottom: 20px;
+}
+
+.call a{
+    color: #fff;
+    background-color: orange;
+    text-decoration: none;
+    padding: 10px 30px;
+}
+
+.call a:hover{
+    background-color: #333;
+}
+
+/* Pagina de servicios */
+.Service_Sec1{
+    height: 100%;
+    width: 100%;
+    background-color: #333;
+    background-image: url(../Images/pizza-4952509_1920.jpg);
+    background-size:auto;
+    background-position: center;
+    padding: 50px;
+}
+
+.call_Service{
+    color: #fff;
+    width: 60%;
+    text-align: left;
+}
+
+.call_Service2{
+    color: #fff;
+    width: 60%;
+    margin: 50px 0;
+}
+
+.call_Service3{
+    color: #fff;
+    width: 60%;
+    margin: 50px 0;
+}
+
+h2, h3{
+    text-align: center;
+}
+
+/* Pagina 2 Productos (grid) */
+.galeria{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(7, 200px);
+    background-color: #333;
+    padding: 20px;
+    grid-gap: 15px;
+    color: rgba(255, 255, 255, 0.8);
+}
+
+.h2-productos{
+    background-color:#333;
+    color: #fff;
+    font-size: 35px;
+}
+
+.item{
+    border: 5px solid #000;
+    background-size: cover;
+    background-position: center;
+}
+
+.item1{
+    background-image: url(../Images/pizza-NAPOLETANA.jpg);
+}
+
+.item2{
+    background-image: url(../Images/margherita.jpg);
+}
+
+.item3{
+    background-image: url(../Images/jamon\ y\ champiñones.jpg);
+}
+
+.item4{
+    background-image: url(../Images/Pizza-cuatro-estaciones.jpg);
+}
+
+.item5{
+    background-image: url(../Images/capricciosa.jpg);
+}
+
+.item6{
+    background-image: url(../Images/cuatroquesos.jpg);
+}
+
+.item7{
+    background-image: url(../Images/pizza-miti.jpg);
+}
+
+/* Pagina 4 (nosotros) */
+
+section{
+    height: 100vh;
+    width: 100%;
+    background-color: #333;
+    background-image: url(../Images/ristorant.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+.page-nosotros{
+    color: #fff;
+    width: 60%;
+    border: 5px solid orange;
+    float: right;
+    margin: 30px;
+    padding: 20px;
+    background-color: rgba(0, 0, 0, 0.7);
+}
+
+.page-nosotros a {
+    color: #fff;
+    background-color: orange;
+    text-decoration: none;
+    padding: 10px 30px;
+}
+
+.page-nosotros a:hover{
+    background-color: #333;
+}
+
+.page-nosotros p{
+    margin-bottom: 20px;
+}
+
+/* Inicio de media queries */
+
+@media only screen and (min-width:330px){
+    .galeria{
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(4 200px);
+    }
+}
+
+@media only screen and (min-width:480px){
+    .galeria{
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: repeat(4 200px);
+    }
+}
+
+@media only screen and (min-width:768px){
+    .galeria{
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+.item1{
+    grid-column: 1/3;
+    grid-row: 1/2;
+}
+
+.item2{
+    grid-column: 3/4;
+    grid-row: 1/2;
+}
+
+.item3{
+    grid-column: 1/2;
+    grid-row: 2/3;
+}
+
+.item4{
+    grid-column: 2/4;
+    grid-row: 2/3;
+}
+
+.item5{
+    grid-column: 1/3;
+    grid-row: 3/4;
+}
+
+.item6{
+    grid-column: 3/4;
+    grid-row: 3/4;
+}
+
+.item7{
+    grid-column: 1/3;
+    grid-row: 4/5;
+}
+
+/* Footer */
+
+footer a {
+    text-decoration: none;
+    font-size: 17px;
+}
+
+footer p{
+    font-size: 17px;
+}
+
+footer a:hover{
+    color: #0D6EFD !important;
+}
+
+i{
+    font-size: 25px;
+}
