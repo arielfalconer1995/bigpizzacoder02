@@ -43,6 +43,20 @@ header{
     color: #333;
 }
 
+.checkbtn{
+    font-size: 30px;
+    color: #fff;
+    float: right;
+    line-height: 80px;
+    margin-right: 40px;
+    cursor: pointer;
+    display: none;
+}
+
+#check{
+    display: none;
+}
+
 /* Imagen de fondo */
 main{
     height: calc(100vh - 80px);
@@ -204,7 +218,47 @@ section{
     margin-bottom: 20px;
 }
 
-/* Inicio de media queries */
+/* Inicio de media queries navbar */
+@media (max-width: 952px){
+    .logo{
+        padding-left: 20px;
+    }
+    .barra ul li{
+        font-size: 16px;
+    }
+}
+
+@media (max-width: 700px){
+    .checkbtn{
+        display: block;
+    }
+    ul{
+        position:fixed;
+        width: 100%;
+        height: 100vh;
+        background: orange;
+        top: 80px;
+        left: -100%;
+        text-align: center;
+        transition: all .5s;
+    }
+    .barra ul li{
+        display: block;
+        margin: 50px 0;
+        line-height: 30px;
+    }
+    .barra ul li a{
+        font-size: 20px;
+    }
+    li a:hover, li a:active{
+        background: none;
+        color: #333;
+    }
+    #check:checked ~ ul{
+        left:0;
+    }
+}
+/* Inicio de media queries grid*/
 
 @media only screen and (min-width:330px){
     .galeria{
