@@ -4,44 +4,66 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../Styles/styles.css">
     <title>Big Pizza</title>
     <!-- Bootstrap 5 -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
-    <!-- Iconos  -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <!-- font-awesome -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
         integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- CSS -->
+    <link rel="stylesheet" href="../Styles/styles.css">
 </head>
 
 <body>
     <header>
-        <div class="logo">Big <span>Pizza</span></div>
-        <nav class="barra">
-            <input type="checkbox" id="check">
-            <label for="check" class="checkbtn">
-                <i class="fas fa-bars"></i>
-            </label>
-            <ul>
-                <li><a href="../index.html">Home</a></li>
-                <li><a href="productos.html">Productos</a></li>
-                <li><a href="servicios.html">Servicios</a></li>
-                <li><a href="nosotros.html">Nosotros</a></li>
-                <li><a href="contacto.html">Contacto</a></li>
-            </ul>
+        <nav class="navbar fixed-top navbar-expand-lg" style="background-color: orange;">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="../index.html">BigPizza</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse justify-content-end" id="navbarNavAltMarkup">
+                    <div class="navbar-nav">
+                        <a class="nav-link active" aria-current="page" href="../index.html">Inicio</a>
+                        <a class="nav-link" href="./productos.html">Productos</a>
+                        <a class="nav-link" href="./servicios.html">Servicios</a>
+                        <a class="nav-link" href="./nosotros.html">Nosotros</a>
+                        <a class="nav-link" href="./contacto.html">Contacto</a>
+                    </div>
+                </div>
+            </div>
         </nav>
     </header>
-
-    <h2 class="h2-productos">Pizzas tradicionales italianas</h2>
+    
+    <h2 class="h2-galeria">Tradicionales</h2>
     <div class="galeria">
-        <div class="item item1">Napolitana</div>
-        <div class="item item2">Margherita Unsplash</div>
-        <div class="item item3">Jamón y Champiñones</div>
-        <div class="item item4">Cuatro Estaciones</div>
-        <div class="item item5">Capricciosa</div>
-        <div class="item item6">Cuatro Quesos</div>
-        <div class="item item7">Verduras Saleepepe</div>
+        <div class="item item1"><h5>Napoletano</h5></div>
+        <div class="item item2"><h5>Margherita</h5></div>
+        <div class="item item3"><h5>Prosciutto e Funghi</h5></div>
+        <div class="item item4"><h5>Quattro Stagioni</h5></div>
+        <div class="item item5"><h5>Capricciosa</h5></div>
+        <div class="item item6"><h5>Quattro Formaggi</h5></div>
+        <div class="item item7"><h5>Saleepepe di Verdure</h5></div>
+        <div class="item item8"><h5>Big Pizza</h5></div>
     </div>
+
+    <h2 class="h2-galeria2">Regionales</h2>
+    <div class="galeria">
+        <div class="item item9"><h5>Calabresa</h5></div>
+        <div class="item item10"><h5>Jamón y Morrones</h5></div>
+        <div class="item item11"><h5>Show de Aceitunas</h5></div>
+        <div class="item item12"><h5>Muzzarella</h5></div>
+        <div class="item item13"><h5>Provolone y Champiñones</h5></div>
+        <div class="item item14"><h5>Humita y Muzzarella</h5></div>
+        <div class="item item15"><h5>Vegan</h5></div>
+        <div class="item item16"><h5>La Vendetta</h5></div>
+    </div>
+
+
     <footer class="bg-light text-dark pt-5 pb-4">
 
         <div class="container text-center text-md-start">
@@ -127,6 +149,10 @@
         </div>
 
     </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+        crossorigin="anonymous"></script>
+    <script src="../script.js"></script>
 </body>
 
 </html>
