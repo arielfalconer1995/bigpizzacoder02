@@ -251,16 +251,19 @@ h3, h2 {
     background-image: url(../Images/ristorant.jpg);
     background-size: cover;
     background-position: center;
+    overflow: hidden;
 }
 
 .page-nosotros {
     color: #fff;
     width: 50%;
     border: 5px solid orange;
+    border-radius: 15px;
     float: right;
-    margin: 20px;
+    margin: 30px;
     padding: 20px;
     background-color: rgba(0, 0, 0, 0.7);
+    overflow: hidden;
 }
 
 .page-nosotros a {
@@ -276,6 +279,15 @@ h3, h2 {
 
 .page-nosotros p {
     margin-bottom: 20px;
+}
+
+/* Inicio de media queries */
+
+@media only screen and (min-width:400px) {
+    .nosotros, .page-nosotros{
+        overflow:auto;
+    }
+    
 }
 
 /* Footer */
