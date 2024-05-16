@@ -1,0 +1,271 @@
+@charset "UTF-8";
+@import url("https://fonts.googleapis.com/css2?family=Agbalumo&family=Signika+Negative&display=swap");
+/* VARIABLES */
+/* MIXINS */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  list-style: none;
+  font-family: "agbalumo", sans-serif;
+}
+
+body {
+  background-image: linear-gradient(rgba(5, 7, 12, 0.75), rgba(5, 7, 12, 0.75)), url(../Images/pizza-pattern.jpg);
+}
+
+/* Codigo para la barra de navegación y logo (Pagina Index) */
+/* Page 1 - Navbar */
+.navbar-brand, .navbar-nav, .nav-link {
+  text-transform: uppercase;
+}
+
+/* Page 1 - Imagen de fondo - main */
+main {
+  margin-top: 40px;
+  height: 100%;
+  width: 100%;
+  background-color: #333;
+  background-image: url(../Images/pizza-4952508_1920.jpg);
+  background-size: cover;
+  background-position: center;
+}
+main h1 {
+  text-transform: uppercase;
+  font-size: 2rem;
+  text-align: left;
+  color: #fff;
+}
+main p {
+  font-size: 1rem;
+  text-align: left;
+  color: #fff;
+}
+main .img-container {
+  display: flex;
+}
+
+/* Botón "Mas Info" */
+.call {
+  width: 50%;
+  border: 5px solid orange;
+  border-radius: 15px;
+  float: left;
+  margin: 30px;
+  padding: 20px;
+  background-color: rgba(0, 0, 0, 0.7);
+  overflow: hidden;
+}
+.call h1 {
+  color: #fff;
+  margin-bottom: 20px;
+}
+.call p {
+  margin-bottom: 20px;
+}
+.call a {
+  color: #fff;
+  background-color: orange;
+  text-decoration: none;
+  padding: 10px 30px;
+}
+.call a:hover {
+  background-color: #333;
+}
+
+/* inicio de media queries */
+@media only screen and (min-width: 400px) {
+  main, .call {
+    overflow: auto;
+  }
+}
+/* Pagina 2 Productos */
+.h2-galeria {
+  margin-top: 55px;
+  text-align: center;
+  color: #fff;
+  font-size: 35px;
+}
+
+.h2-galeria2 {
+  color: #fff;
+  text-align: center;
+}
+
+.galeria {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: repeat(8, 200px);
+  padding: 20px;
+  grid-gap: 15px;
+}
+.galeria .item1 {
+  background-image: url(../Images/Napolitana.jpg);
+}
+.galeria .item2 {
+  background-image: url(../Images/margherita.jpg);
+}
+.galeria .item3 {
+  background-image: url(../Images/jamon\ y\ champiñones.jpg);
+}
+.galeria .item4 {
+  background-image: url(../Images/Cuatro-estaciones.jpg);
+}
+.galeria .item5 {
+  background-image: url(../Images/capricciosa.jpg);
+}
+.galeria .item6 {
+  background-image: url(../Images/cuatroquesos.jpg);
+}
+.galeria .item7 {
+  background-image: url(../Images/verdurassaleepepe.avif);
+}
+.galeria .item8 {
+  background-image: url(../Images/pizza-miti.jpg);
+}
+.galeria .item9 {
+  background-image: url(../Images/regional-calabresa.jpg);
+}
+.galeria .item10 {
+  background-image: url(../Images/regional-jamonymorrones.jpg);
+}
+.galeria .item11 {
+  background-image: url(../Images/regional-showdeaceitunas.jpg);
+}
+.galeria .item12 {
+  background-image: url(../Images/regional-muzarella.jpg);
+}
+.galeria .item13 {
+  background-image: url(../Images/regional-champiñones.jpg);
+}
+.galeria .item14 {
+  background-image: url(../Images/regional-humita.jpg);
+}
+.galeria .item15 {
+  background-image: url(../Images/regional-vegan.jpg);
+}
+.galeria .item16 {
+  background-image: url(../Images/regional-La\ vendetta.jpg);
+}
+.galeria .item {
+  border: 5px solid #000;
+  border-radius: 15px;
+  background-size: cover;
+  background-position: center;
+  color: #fff;
+  padding: 0px 20px;
+}
+
+/* Inicio de las media queries */
+@media only screen and (min-width: 480px) {
+  .galeria {
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: repeat(4, 200px);
+  }
+}
+@media only screen and (min-width: 768px) {
+  .galeria {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+@media only screen and (min-width: 1024px) {
+  .galeria {
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(2, 200px);
+  }
+}
+/* Pagina 3 servicios */
+.Service_Sec1 {
+  margin-top: 15px;
+  height: 100%;
+  width: 100%;
+  background-color: #333;
+  background-image: url(../Images/pizza-4952509_1920.jpg);
+  background-size: auto;
+  background-position: center;
+  padding: 50px;
+}
+.Service_Sec1 .call_Service {
+  color: #fff;
+  width: 60%;
+  text-align: left;
+}
+.Service_Sec1 .call_Service2 {
+  color: #fff;
+  width: 60%;
+  margin: 50px 0;
+}
+.Service_Sec1 .call_Service3 {
+  color: #fff;
+  width: 60%;
+  margin: 50px 0;
+}
+.Service_Sec1 h3, .Service_Sec1 h2 {
+  color: #fff;
+  font-size: 35px;
+  text-align: center;
+}
+
+/* Pagina 4 (nosotros) */
+.nosotros {
+  margin-top: 45px;
+  height: 100vh;
+  width: 100%;
+  background-color: #333;
+  background-image: url(../Images/ristorant.jpg);
+  background-size: cover;
+  background-position: center;
+  overflow: hidden;
+}
+
+.page-nosotros {
+  color: #fff;
+  width: 50%;
+  border: 5px solid orange;
+  border-radius: 15px;
+  float: right;
+  margin: 30px;
+  padding: 20px;
+  background-color: rgba(0, 0, 0, 0.7);
+  overflow: hidden;
+}
+
+.page-nosotros a {
+  color: #fff;
+  background-color: orange;
+  text-decoration: none;
+  padding: 10px 30px;
+}
+
+.page-nosotros a:hover {
+  background-color: #333;
+}
+
+.page-nosotros p {
+  margin-bottom: 20px;
+}
+
+/* Inicio de media queries */
+@media only screen and (min-width: 400px) {
+  .nosotros, .page-nosotros {
+    overflow: auto;
+  }
+}
+/* Footer */
+footer a {
+  text-decoration: none;
+  font-size: 17px;
+}
+
+footer p {
+  font-size: 17px;
+}
+
+footer a:hover {
+  color: #0D6EFD !important;
+}
+
+i {
+  font-size: 25px;
+}/*# sourceMappingURL=style.css.map */

@@ -1,0 +1,330 @@
+@import url('https://fonts.googleapis.com/css2?family=Agbalumo&family=Signika+Negative&display=swap');
+
+/* VARIABLES */
+$fuente-gral: "agbalumo", sans-serif;
+$color-principal: #fff;
+$color-secundario: #000;
+$background-color1: #333;
+$background-color2: orange;
+$size1: 5px;
+$size2: 15px;
+$var1: 100%;
+$var2: 50%;
+
+/* MIXINS */
+
+@mixin crearBordes($background-color2, $size1, $size2){
+    border: $size1 solid $background-color2;
+    border-radius: $size2;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+    font-family: $fuente-gral;
+}
+
+body {
+    background-image: linear-gradient(rgba(5, 7, 12, 0.75), rgba(5, 7, 12, 0.75)),
+    url(../Images/pizza-pattern.jpg);
+}
+/* Codigo para la barra de navegación y logo (Pagina Index) */
+/* Page 1 - Navbar */
+
+    .navbar-brand, .navbar-nav, .nav-link {
+        text-transform: uppercase;
+    }          
+
+/* Page 1 - Imagen de fondo - main */
+main {
+    h1 {
+        text-transform: uppercase;
+        font-size: 2rem;
+        text-align: left;
+        color: $color-principal;
+    }
+
+    p {
+        font-size: 1rem;
+        text-align: left;
+        color: $color-principal;
+    }
+
+    .img-container {
+        display: flex;
+    }
+
+    margin-top: 40px;
+    height: calc($var2*2);
+    width: calc($var2*2);
+    background-color: $background-color1;
+    background-image: url(../Images/pizza-4952508_1920.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+/* Botón "Mas Info" */
+.call {
+    
+    h1 {
+        color: $color-principal;
+        margin-bottom: 20px;
+    }
+
+    p {
+        margin-bottom: 20px;
+    }
+
+    a {
+        color: $color-principal;
+        background-color: $background-color2;
+        text-decoration: none;
+        padding: 10px 30px;
+    }
+
+    a:hover {
+        background-color: $background-color1;
+    }
+
+    width: $var1 - $var2;
+    @include crearBordes($background-color2, $size1, $size2);
+    float: left;
+    margin: 30px;
+    padding: 20px;
+    background-color: rgba(0, 0, 0, 0.7);
+    overflow: hidden;
+}
+
+/* inicio de media queries */
+
+@media only screen and (min-width:400px) {
+    main, .call{
+        overflow:auto;
+    }
+    
+}
+
+/* Pagina 2 Productos */
+
+.h2-galeria{
+    margin-top: 55px;
+    text-align: center;
+    color: $color-principal;
+    font-size: 35px;
+}
+
+.h2-galeria2{
+    color: $color-principal;
+    text-align: center;
+}
+
+.galeria {
+    .item1 {
+        background-image: url(../Images/Napolitana.jpg);
+    }
+    
+    .item2 {
+        background-image: url(../Images/margherita.jpg);
+    }
+    
+    .item3 {
+        background-image: url(../Images/jamon\ y\ champiñones.jpg);
+    }
+    
+    .item4 {
+        background-image: url(../Images/Cuatro-estaciones.jpg);
+    }
+    
+    .item5 {
+        background-image: url(../Images/capricciosa.jpg);
+    }
+    
+    .item6 {
+        background-image: url(../Images/cuatroquesos.jpg);
+    }
+    
+    .item7 {
+        background-image: url(../Images/verdurassaleepepe.avif);
+    }
+    
+    .item8 {
+        background-image: url(../Images/pizza-miti.jpg);
+    }
+
+    .item9{
+        background-image: url(../Images/regional-calabresa.jpg);
+    }
+    
+    .item10{
+        background-image: url(../Images/regional-jamonymorrones.jpg);
+    }
+    
+    .item11{
+        background-image: url(../Images/regional-showdeaceitunas.jpg);
+    }
+    
+    .item12{
+        background-image: url(../Images/regional-muzarella.jpg);
+    }
+    
+    .item13{
+        background-image: url(../Images/regional-champiñones.jpg);
+    }
+    
+    .item14{
+        background-image: url(../Images/regional-humita.jpg);
+    }
+    
+    .item15{
+        background-image: url(../Images/regional-vegan.jpg);
+    }
+    
+    .item16{
+        background-image: url(../Images/regional-La\ vendetta.jpg);
+    }
+
+    .item {
+        @include crearBordes($color-secundario, $size1, $size2);
+        background-size: cover;
+        background-position: center;
+        color: $color-principal;
+        padding: 0px 20px;
+    }
+    
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(8, 200px);
+    padding: 20px;
+    grid-gap: 15px;
+}
+
+/* Inicio de las media queries */
+
+@media only screen and (min-width:480px) {
+    .galeria{
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: repeat(4, 200px);
+    }
+}
+
+@media only screen and (min-width:768px) {
+    .galeria{
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+@media only screen and (min-width:1024px) {
+    .galeria{
+        grid-template-columns: repeat(4, 1fr);
+        grid-template-rows: repeat(2, 200px);
+    }
+}
+
+/* Pagina 3 servicios */
+
+.Service_Sec1 {
+    margin-top: 15px;
+    height: calc($var2*2);
+    width: calc($var2*2);
+    background-color: $background-color1;
+    background-image: url(../Images/pizza-4952509_1920.jpg);
+    background-size: auto;
+    background-position: center;
+    padding: 50px;
+
+    .call_Service {
+        color: $color-principal;
+        width: 60%;
+        text-align: left;
+    }
+    
+    .call_Service2 {
+        color: $color-principal;
+        width: 60%;
+        margin: 50px 0;
+    }
+    
+    .call_Service3 {
+        color: $color-principal;
+        width: 60%;
+        margin: 50px 0;
+    }
+    
+    h3, h2 {
+        color: $color-principal;
+        font-size: 35px;
+        text-align: center;
+    }
+}
+
+
+
+/* Pagina 4 (nosotros) */
+
+.nosotros {
+    margin-top: 45px;
+    height: 100vh;
+    width: 100%;
+    background-color: $background-color1;
+    background-image: url(../Images/ristorant.jpg);
+    background-size: cover;
+    background-position: center;
+    overflow: hidden;
+}
+
+.page-nosotros {
+    color: $color-principal;
+    width: 50%;
+    @include crearBordes($background-color2, $size1, $size2);
+    float: right;
+    margin: 30px;
+    padding: 20px;
+    background-color: rgba(0, 0, 0, 0.7);
+    overflow: hidden;
+}
+
+.page-nosotros a {
+    color: $color-principal;
+    background-color: $background-color2;
+    text-decoration: none;
+    padding: 10px 30px;
+}
+
+.page-nosotros a:hover {
+    background-color: $background-color1;
+}
+
+.page-nosotros p {
+    margin-bottom: 20px;
+}
+
+/* Inicio de media queries */
+
+@media only screen and (min-width:400px) {
+    .nosotros, .page-nosotros{
+        overflow:auto;
+    }
+    
+}
+
+/* Footer */
+
+footer a {
+    text-decoration: none;
+    font-size: 17px;
+}
+
+footer p {
+    font-size: 17px;
+}
+
+footer a:hover {
+    color: #0D6EFD !important;
+}
+
+i {
+    font-size: 25px;
+}
