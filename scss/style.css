@@ -125,27 +125,30 @@ main .img-container {
   background-image: url(../Images/pizza-miti.jpg);
 }
 .galeria .item9 {
-  background-image: url(../Images/regional-calabresa.jpg);
+  background-image: url(../Images/regional-Fugazzeta.jpg);
 }
 .galeria .item10 {
-  background-image: url(../Images/regional-jamonymorrones.jpg);
+  background-image: url(../Images/regional-calabresa.jpg);
 }
 .galeria .item11 {
-  background-image: url(../Images/regional-showdeaceitunas.jpg);
+  background-image: url(../Images/regional-jamonymorrones.jpg);
 }
 .galeria .item12 {
-  background-image: url(../Images/regional-muzarella.jpg);
+  background-image: url(../Images/regional-showdeaceitunas.jpg);
 }
 .galeria .item13 {
-  background-image: url(../Images/regional-champiñones.jpg);
+  background-image: url(../Images/regional-muzarella.jpg);
 }
 .galeria .item14 {
-  background-image: url(../Images/regional-humita.jpg);
+  background-image: url(../Images/regional-champiñones.jpg);
 }
 .galeria .item15 {
-  background-image: url(../Images/regional-vegan.jpg);
+  background-image: url(../Images/regional-humita.jpg);
 }
 .galeria .item16 {
+  background-image: url(../Images/regional-vegan.jpg);
+}
+.galeria .item17 {
   background-image: url(../Images/regional-La\ vendetta.jpg);
 }
 .galeria .item {
@@ -155,6 +158,10 @@ main .img-container {
   background-position: center;
   color: #fff;
   padding: 0px 20px;
+}
+.galeria .item:hover {
+  border: 5px solid orange;
+  border-radius: 15px;
 }
 
 /* Inicio de las media queries */

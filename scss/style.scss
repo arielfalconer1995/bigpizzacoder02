@@ -155,34 +155,38 @@ main {
     }
 
     .item9{
-        background-image: url(../Images/regional-calabresa.jpg);
+        background-image: url(../Images/regional-Fugazzeta.jpg);
     }
     
     .item10{
+        background-image: url(../Images/regional-calabresa.jpg);
+    }
+
+    .item11{
         background-image: url(../Images/regional-jamonymorrones.jpg);
     }
     
-    .item11{
+    .item12{
         background-image: url(../Images/regional-showdeaceitunas.jpg);
     }
     
-    .item12{
+    .item13{
         background-image: url(../Images/regional-muzarella.jpg);
     }
     
-    .item13{
+    .item14{
         background-image: url(../Images/regional-champiñones.jpg);
     }
     
-    .item14{
+    .item15{
         background-image: url(../Images/regional-humita.jpg);
     }
     
-    .item15{
+    .item16{
         background-image: url(../Images/regional-vegan.jpg);
     }
     
-    .item16{
+    .item17{
         background-image: url(../Images/regional-La\ vendetta.jpg);
     }
 
@@ -192,6 +196,10 @@ main {
         background-position: center;
         color: $color-principal;
         padding: 0px 20px;
+    }
+
+    .item:hover {
+        @include crearBordes(orange, $size1, $size2);
     }
     
     display: grid;
